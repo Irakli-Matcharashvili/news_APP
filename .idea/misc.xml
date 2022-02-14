@@ -3,7 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/drawable/ic_back.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/drawable/ic_favorite.xml" value="0.23703703703703705" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/drawable/news_articl_layout.xml" value="0.23703703703703705" />
         <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/category_item_layout.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/first_onboarding_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/news_detail_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/news_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/news_fragment_1.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/news_fragment_detail.xml" value="0.2" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/news_row_layout.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/onboarding_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/onboarding_fragment_1.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/saved_news_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/saved_news_fragment_1.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/search_news_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/search_news_fragment_1.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/second_onboarding_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/splash_screen_fragment.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/splash_screen_fragment_1.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/irakli.matcharashvil/AndroidStudioProjects/news_APP2/app/src/main/res/layout/third_onboarding_fragment.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>

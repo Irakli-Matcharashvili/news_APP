@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_p_146"
+    android:layout_marginTop="@dimen/dimen_p_20"
+    android:background="@drawable/news_articl_layout"
+    android:id="@+id/newsRowLayout"
+    android:elevation="@dimen/dimen_p_5">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/newsDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_p_29"
+        android:layout_marginTop="@dimen/dimen_p_15"
+        android:gravity="center"
+        android:textColor="@color/app_items_dark"
+        android:textSize="@dimen/dimen_sp_12"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/newsImageView"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="51dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/newsSubjectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_p_15"
+        android:layout_marginEnd="@dimen/dimen_p_20"
+        android:textColor="@color/articles_layout_subject_text_view_color"
+        android:textSize="@dimen/dimen_sp_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/newsTitleTextView"
+        android:layout_width="@dimen/dimen_p_0"
+        android:layout_height="@dimen/dimen_p_80"
+        android:layout_marginStart="@dimen/dimen_p_10"
+        android:layout_marginTop="@dimen/dimen_p_10"
+        android:layout_marginEnd="@dimen/dimen_p_49"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_sp_20"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/newsImageView"
+        app:layout_constraintTop_toBottomOf="@id/newsSubjectTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
