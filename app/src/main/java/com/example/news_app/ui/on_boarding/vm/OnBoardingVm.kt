@@ -1,4 +1,4 @@
-package com.example.news_app.ui.onboarding.vm
+package com.example.news_app.ui.on_boarding.vm
 
 import androidx.lifecycle.ViewModel
 

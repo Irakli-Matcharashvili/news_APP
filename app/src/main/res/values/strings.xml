@@ -5,8 +5,8 @@
     <string name="news_fragment_text">News</string>
     <string name="saved_fragment_text">Saved</string>
     <string name="on_boarding_start_text">Save most relevant article to access anytime</string>
-    <string name="on_boarding_middle_text">Search articles with keywords</string>
-    <string name="on_boarding_end_text">Save most relevant article to access anytime</string>
+    <string name="on_boarding_middle_text">Search articles with \nkeywords</string>
+    <string name="on_boarding_end_text">Save most relevant \narticle to access \nanytime</string>
     <string name="category_business_text">business</string>
     <string name="category_sport_text">sports</string>
     <string name="category_tech_text">technology</string>

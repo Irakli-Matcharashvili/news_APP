@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fragments_background_color"
-    tools:context=".ui.news_detail.NewsDetailFragment">
+    tools:context=".ui.news_detail.ui.NewsDetailFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/newsDetailFragmentToolBar"
@@ -15,23 +15,23 @@
         android:background="@color/app_items_dark"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:id="@+id/newsDetailBackButton"
             android:layout_width="@dimen/dimen_p_25"
             android:layout_height="@dimen/dimen_p_25"
             android:background="@drawable/ic_back" />
 
-        <androidx.appcompat.widget.AppCompatTextView
+        <TextView
             android:id="@+id/newsNameTextView"
             android:layout_width="wrap_content"
-            android:layout_marginStart="@dimen/dimen_p_30"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_p_30"
             android:textColor="@color/white"
             android:textSize="@dimen/dimen_sp22"
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <ImageView
         android:id="@+id/newsImageView"
         android:layout_width="@dimen/dimen_p_109"
         android:layout_height="@dimen/dimen_p_109"
@@ -39,9 +39,10 @@
         android:layout_marginTop="@dimen/dimen_p_27"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/newsDetailFragmentToolBar" />
+        app:layout_constraintTop_toBottomOf="@id/newsDetailFragmentToolBar"
+        android:background="@drawable/news_detail_imageview"/>
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/newsTitleTextView"
         android:layout_width="@dimen/dimen_p_200"
         android:layout_height="@dimen/dimen_p_120"
@@ -61,11 +62,11 @@
         android:layout_width="@dimen/dimen_p_350"
         android:layout_height="@dimen/dimen_p_320"
         android:layout_marginTop="@dimen/dimen_p_34"
+        android:layout_marginBottom="@dimen/dimen_p_50"
         android:autoSizeTextType="uniform"
         android:background="@drawable/news_articl_layout"
-        android:layout_marginBottom="@dimen/dimen_p_50"
-        android:gravity="center"
         android:elevation="@dimen/dimen_p_10"
+        android:gravity="center"
         android:padding="@dimen/dimen_p_7"
         android:textColor="@color/news_detail_description_text_view_color"
         android:textSize="@dimen/dime_sp_24"
@@ -80,11 +81,11 @@
         android:layout_width="@dimen/dimen_p_60"
         android:layout_height="@dimen/dimen_p_60"
         android:layout_marginBottom="@dimen/dimen_p_24"
-        app:srcCompat="@drawable/ic_favorite"
         app:backgroundTint="@color/app_items_dark"
         app:fabCustomSize="@dimen/dimen_p_60"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_favorite"
         app:tint="@color/white" />
 </androidx.constraintlayout.widget.ConstraintLayout>

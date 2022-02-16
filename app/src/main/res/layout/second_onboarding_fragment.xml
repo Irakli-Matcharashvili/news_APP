@@ -4,18 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.on_boarding.screens.OnBoardingMiddleFragment">
+    tools:context=".ui.on_boarding.screen.OnBoardingSecondFragment">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/onBoardingMiddleImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/onBoardingSecondImageView"
+        android:layout_width="@dimen/dimen_p_279"
+        android:layout_height="@dimen/dimen_p_257"
         android:layout_marginTop="@dimen/dimen_p_112"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/onboarding_fragment_image"/>
 
     <View
+        android:id="@+id/secondFragmentSearchView"
         android:layout_width="@dimen/dimen_p_75"
         android:layout_height="@dimen/dimen_p_75"
         android:layout_marginEnd="@dimen/dimen_p_75"
@@ -23,20 +25,22 @@
         android:backgroundTint="@color/on_boarding_icon_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/search_view"/>
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
+        android:id="@+id/secondFragmentTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_p_52"
-        android:layout_marginTop="@dimen/dimen_p_88"
         android:layout_marginEnd="@dimen/dimen_p_15"
+        app:layout_constraintBottom_toTopOf="@+id/middleOnBoardingNextButton"
+        android:layout_marginBottom="67dp"
         android:text="@string/on_boarding_middle_text"
         android:textColor="@color/black"
-        android:textSize="@dimen/dimen_sp_32"
-        app:layout_constraintTop_toBottomOf="@id/onBoardingMiddleImageView" />
+        android:textSize="@dimen/dimen_sp_32"/>
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/middleOnBoardingNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

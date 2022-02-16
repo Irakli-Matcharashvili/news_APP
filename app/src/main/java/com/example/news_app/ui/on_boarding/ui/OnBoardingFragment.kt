@@ -1,4 +1,4 @@
-package com.example.news_app.ui.onboarding.ui
+package com.example.news_app.ui.on_boarding.ui
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.news_app.R
-import com.example.news_app.ui.onboarding.vm.OnBoardingVm
+import com.example.news_app.ui.on_boarding.vm.OnBoardingVm
 
 class OnBoardingFragment : Fragment() {
 

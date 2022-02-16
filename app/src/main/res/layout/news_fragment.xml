@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:gbp="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,55 +9,28 @@
     android:background="@color/fragments_background_color"
     tools:context=".ui.news.ui.NewsFragment">
 
-    <TextView
-        android:id="@+id/categoryStartTextView"
-        android:layout_width="@dimen/dimen_p_75"
-        android:layout_height="@dimen/dimen_p_16"
-        android:layout_marginStart="@dimen/dimen_sp_20"
-        android:layout_marginTop="@dimen/dimen_p_27"
-        android:text="@string/category_business_text"
-        android:textColor="@color/api_category_color"
-        app:layout_constraintStart_toStartOf="@+id/newsRecyclerView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/categorySportTextView"
-        android:layout_width="@dimen/dimen_p_75"
-        android:layout_height="@dimen/dimen_p_16"
-        android:layout_marginStart="@dimen/dimen_p_13"
-        android:layout_marginTop="@dimen/dimen_p_27"
-        android:text="@string/category_sport_text"
-        android:textColor="@color/api_category_color"
-        app:layout_constraintStart_toEndOf="@id/categoryStartTextView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/categoryTechTextView"
-        android:layout_width="@dimen/dimen_p_75"
-        android:layout_height="@dimen/dimen_p_16"
-        android:layout_marginStart="@dimen/dimen_p_13"
-        android:layout_marginTop="@dimen/dimen_p_27"
-        android:text="@string/category_tech_text"
-        android:textColor="@color/api_category_color"
-        app:layout_constraintStart_toEndOf="@id/categorySportTextView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="@dimen/dimen_p_75"
-        android:layout_height="@dimen/dimen_p_16"
-        android:layout_marginStart="@dimen/dimen_p_13"
-        android:layout_marginTop="@dimen/dimen_p_27"
-        android:text="@string/category_science_text"
-        android:textColor="@color/api_category_color"
-        app:layout_constraintStart_toEndOf="@+id/categoryTechTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_p_70"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/newsRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_p_78"
         android:layout_marginHorizontal="@dimen/dimen_p_20"
-        android:layout_marginTop="@dimen/dimen_p_78" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-
+    <com.jpardogo.android.googleprogressbar.library.GoogleProgressBar
+        android:id="@+id/customProgressBar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        gbp:type="chrome_floating_circles"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

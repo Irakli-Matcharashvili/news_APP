@@ -28,6 +28,7 @@ class NewsAdapter(private val onItemClickListener: OnItemClickListener) :
 
     class ViewHolder(private val binding: NewsRowLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
+
         fun onBind(articles: Articles, onItemClickListener: OnItemClickListener) {
             with(binding) {
                 newsTitleTextView.text = articles.title

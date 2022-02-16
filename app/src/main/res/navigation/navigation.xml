@@ -2,4 +2,72 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation"/>
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.news_app.ui.news.ui.NewsFragment"
+        tools:layout="@layout/news_fragment" >
+        <action
+            android:id="@+id/action_newsFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedNewsFragment"
+        android:name="com.example.news_app.ui.saved_news.ui.SavedNewsFragment"
+        tools:layout="@layout/saved_news_fragment" >
+        <action
+            android:id="@+id/action_savedNewsFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchNewsFragment"
+        android:name="com.example.news_app.ui.search_news.ui.SearchNewsFragment"
+        android:label="fragment_search_news"
+        tools:layout="@layout/search_news_fragment" >
+        <action
+            android:id="@+id/action_searchNewsFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.example.news_app.ui.news_detail.ui.NewsDetailFragment"
+        tools:layout="@layout/news_detail_fragment" >
+
+        <argument
+            android:name="article"
+            app:argType="com.example.news_app.model.Articles" />
+        <action
+            android:id="@+id/action_newsDetailFragment_to_savedNewsFragment"
+            app:destination="@id/savedNewsFragment"
+            app:popUpTo="@id/newsDetailFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.news_app.ui.splash_screen.ui.SplashScreenFragment"
+        tools:layout="@layout/splash_screen_fragment" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_newsFragment"
+            app:destination="@id/newsFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment"
+            app:popUpTo="@id/splashScreenFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.news_app.ui.on_boarding.ui.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/onboarding_fragment" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_newsFragment"
+            app:destination="@id/newsFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

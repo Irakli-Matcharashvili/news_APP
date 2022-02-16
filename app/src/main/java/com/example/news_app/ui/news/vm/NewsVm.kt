@@ -21,7 +21,7 @@ class NewsVm : ViewModel() {
     private val _errorLiveData: MutableLiveData<String> = MutableLiveData()
     val errorLiveData: MutableLiveData<String> get() = _errorLiveData
 
-    fun getCustomCategoryNews(category: String,) {
+    fun getCustomCategoryNews(category: String, ) {
         viewModelScope.launch(Dispatchers.IO) {
             val response = repository.getCustomCategoryNews(category = category, apiKey = API_KEY)
             when (response) {
@@ -30,5 +30,5 @@ class NewsVm : ViewModel() {
             }
 
         }
-
     }
+}

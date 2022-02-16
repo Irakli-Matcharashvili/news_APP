@@ -4,27 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.on_boarding.screens.OnBoardingFinishFragment">
+    tools:context=".ui.on_boarding.screen.OnBoardingFinishFragment">
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <ImageView
         android:id="@+id/onBoardingStartImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/dimen_p_279"
+        android:layout_height="@dimen/dimen_p_257"
         android:layout_marginTop="@dimen/dimen_p_112"
+        android:background="@drawable/onboarding_fragment_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <View
-        android:layout_marginBottom="@dimen/dimen_p_50"
-        android:layout_marginEnd="@dimen/dimen_p_75"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="@dimen/dimen_p_55"
-        android:layout_height="@dimen/dimen_p_55"/>
+        android:layout_height="@dimen/dimen_p_55"
+        android:layout_marginEnd="@dimen/dimen_p_75"
+        android:layout_marginBottom="@dimen/dimen_p_50"
+        android:background="@drawable/downloading_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_p_52"
@@ -35,7 +37,7 @@
         android:textSize="@dimen/dimen_sp_32"
         app:layout_constraintTop_toBottomOf="@id/onBoardingStartImageView" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/finishOnBoardingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,5 +50,4 @@
         android:textSize="@dimen/dime_sp_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
